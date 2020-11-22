@@ -1,0 +1,50 @@
+<html>
+    <h1>Monkey nuts!</h1>
+<img src="monkeys .jpg" alt="" width="200" height="200">
+<img src="nuts.png" alt="" width="200" height="200">
+
+
+
+
+<p id="Monkey"></p>
+
+<script>
+window.onload=function (){
+
+
+    var MonkeyText =""
+
+
+
+    for (monkey1 = 1; monkey1<25;monkey1+=2){
+
+        
+        for (monkey2 = 1; monkey2<25;monkey2+=2){
+
+            monkey3 = 25-monkey1-monkey2
+            if (monkey1!=monkey2 && monkey1 !=monkey3 && monkey2 !=monkey3 &&monkey3>0){
+                MonkeyText+=" monkey1 has "+monkey1+" nuts"
+
+                MonkeyText+=" monkey2 has "+ monkey2+ " nuts"
+                MonkeyText+=" monkey3 has "+ monkey3+ " nuts<br>" 
+
+
+
+            }
+            
+        }
+    }
+
+    document.getElementById("Monkey").innerHTML =MonkeyText
+
+
+
+
+}
+</script>
+
+
+
+
+
+</html>
